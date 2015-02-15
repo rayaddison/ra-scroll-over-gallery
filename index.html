@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8" />        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- Important for ie compatibility mode -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /><!-- Important for mobile devices -->
+    <meta name="author" content="Ray Addison">
+    <meta name="robots" content="index,follow,archive" />
+    <!-- Site styles -->
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="photo__gallery">
+            <script>
+            window.path = "images/";
+            window.images = [ path + 'image-01.jpg', path + 'image-02.jpg', path + 'image-03.jpg'];
+            window.retinaImages = [ path + 'image-01@2x.jpg', path + 'image-02@2x.jpg', path + 'image-03@2x.jpg'];
+            </script>
+            <div class="gallery__slide">
+                <img class="your-responsive-image-class" src="">
+            </div>
+        </div>
+
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="ra-scroll-over.js"></script>
+<script>
+  $(window).load(function() {
+    // Only call function if the image array is present on the page
+    if (typeof images !== 'undefined') {
+        raScrollOver();
+    }
+  });
+</script>
+
+</body>
+</html>
+
+

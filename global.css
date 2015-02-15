@@ -1,0 +1,13 @@
+.container {
+	width: 100%;
+	max-width: 500px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.your-responsive-image-class {
+	width: 100%;
+	height: auto;
+}
